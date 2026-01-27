@@ -145,7 +145,7 @@ input#voucherCode {
   border-radius: 24px;
   border: none;
   margin: 0 auto;
-  --max-width: 20rem;
+  --max-width: 18rem;
   width: min(90% - 0rem, var(--max-width));
   padding-top: 14px;
   padding-bottom: 14px;
