@@ -42,7 +42,7 @@ html {
   transform: translate(-50%, -50%);
   left: 75%;
   width: 50%;
-  transition: 1s ease-in-out;
+  transition: .5s linear;
   display: grid;
   grid-template-columns: 1fr;
   z-index: 5;
