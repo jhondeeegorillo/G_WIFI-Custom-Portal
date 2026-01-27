@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "sf-pro-regular";
+  src: url(./font/ProductSans.ttf);
+}
+@font-face {
+  font-family: "space-tech-italic";
+  src: url(./font/ProductSans-Medium.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "sf-pro-regular", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.counter {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #231f20;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-tap-highlight-color: #231f20;
+  -webkit-tap-highlight-color: transparent;
+}
