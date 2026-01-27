@@ -319,7 +319,7 @@ form.sign-in-form {
 
   .image {
     width: 250px;
-    transition: 0.75s ease-in-out;
+    transition: 1.25s ease-in-out;
   }
 
   .panel .content {
