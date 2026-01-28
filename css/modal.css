@@ -27,7 +27,7 @@
   cursor: pointer;
   width: 30px;
   height: 30px;
-  background-color: #231f20;
+  background-color: var(--clr-dark);
   border-radius: 100px;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -76,18 +76,18 @@
 .instructions-container h4 {
   margin-bottom: 10px;
   font-size: 22px;
-  color: #333;
+  color: var(--clr-dark);
 }
 
 .instructions-container p {
   margin: 1px 0;
   line-height: 1.5;
-  color: #555;
+  color: var(--clr-mdark);
   font-size: 14px;
 }
 
 .instructions-container p b {
-  color: #231f20; /* Change to your desired color */
+  color: var(--clr-dark); /* Change to your desired color */
   font-size: 14px; /* Adjust font size if needed */
 }
 .ins-con{
@@ -98,7 +98,7 @@ width: 100%;
 
 
 #gcash {
-  color: #231f20; /* Change to your desired color */
+  color: var(--clr-dark); /* Change to your desired color */
   font-size: 14px; /* Adjust font size if needed */
 }
 
@@ -110,6 +110,6 @@ width: 100%;
 .instructions-container a {
   margin: 1px 0;
   line-height: 1.5;
-  color: #555;
+  color: var(--clr-dark);
   font-size: 14px;
 }

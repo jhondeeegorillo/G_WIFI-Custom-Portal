@@ -35,7 +35,7 @@ body.portal {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #ecedee;
+  background-color: var(--clr-body-bg);
   /*background-image: url(img/bg.gif)*/
 }
 
@@ -141,7 +141,7 @@ input#voucherCode {
 /* End of input name */
 
 .button {
-  background: rgb(35 31 32);
+  background:  var(--clr-dark);
   border-radius: 24px;
   border: none;
   margin: 0 auto;
@@ -194,7 +194,7 @@ input#voucherCode {
 /* Start of Main Greeting */
 .maingreeting {
   font-family: "sf-pro-regular", sans-serif;
-  color: rgb(35 31 32);
+  color: var(--clr-dark);
   font-weight: 500;
   font-size: 14px;
   text-align: center;

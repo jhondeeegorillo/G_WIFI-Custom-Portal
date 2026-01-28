@@ -86,9 +86,9 @@ function handleSubmit(event) {
     if (data.errorCode === 0) {
       // Successful authentication
       openPopup(); // Show success popup
-      window.location.href = "https://www.facebook.com/gwifi.internetsolutions"; // Redirect to landing page
+      window.location.href = "https://www.youtube.com/@jhondeeegorillo"; // Redirect to landing page
       // Redirect to the Google Forms URL as the landing page
-      // window.location.href = "https://www.facebook.com/gwifi.internetsolutions";
+      // window.location.href = "https://www.youtube.com/@jhondeeegorillo";
     } else {
       isCommited = false; // Allow retries on failure
       openPopup(); // Show error popup

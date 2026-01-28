@@ -24,6 +24,8 @@ html {
   --bak-wall: url(wallpaper.jpg);
 } */
 :root {
+  --clr-dark: rgb(35 31 32);
+  --clr-mdark: rgb(125 126 126);
   --clr-body-bg: #ecedee;
   --clr-nav-text: rgb(255, 255, 255);
   --clr-nav-bg: #231f20;
