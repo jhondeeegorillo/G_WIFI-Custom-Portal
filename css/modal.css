@@ -94,6 +94,11 @@ flex-direction: column;
 width: 100%;
 }
 
+#number {
+  color: var(--insdark); /* Change to your desired color */
+  font-size: 14px; /* Adjust font size if needed */
+  user-select: all;
+}
 
 #gcash {
   color: var(--insdark); /* Change to your desired color */
