@@ -56,7 +56,7 @@ body.portal {
   right: 0;
   margin: auto;
   text-align: center;
-  background: #ffffff;
+  background: var(--bg);
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

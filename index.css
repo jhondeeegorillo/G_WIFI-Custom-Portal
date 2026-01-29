@@ -35,7 +35,7 @@ body.portal {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: var(--clr-body-bg);
+  background-color: var(--bg);
   /*background-image: url(img/bg.gif)*/
 }
 
@@ -73,17 +73,13 @@ body.portal {
   margin-top: 10px;
   margin-right: auto;
   margin-bottom: 15px;
-  background: transparent;
-  color: var(--clr-osi-text);
   text-align: left;
   border-radius: 24px;
-  border: 2px solid rgb(236 237 238);
+  border: 2px solid var(--voucherline);
   width: 100%;
   padding: 12px;
   text-decoration: none;
   cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
 }
 
 #rotatingText1, #rotatingText2 {
@@ -93,7 +89,7 @@ body.portal {
 ::placeholder {
   font-size: 18px;
   font-weight: 500;
-  color: var(--clr-phdr-text);
+  color: var(--voucherlight);
   letter-spacing: normal;
 }
 
@@ -101,29 +97,21 @@ body.portal {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
+  text-align: center;
   font-size: 18px;
   font-weight: 500;
-  outline: none;
   border-radius: 24px;
-  color: rgb(35 31 32);
-  background: var(--clr-input-bg);
+  color: var(--voucherdark);
   letter-spacing: 0.5px;
-  caret-color: rgb(35 31 32);
+  caret-color: var(--voucherline);
 }
 
 .input:focus {
-  outline: 2px solid var(--clr-input-border-fcs);
+  outline: 2px solid var(--voucherline);
 }
 
 .input:focus::placeholder {
-  color: var(--clr-phdr-text-fcs);
-}
-
-input#voucherCode {
-  background: url(./img/icon/voucher.png) 10px;
-  background-repeat: no-repeat;
-  text-indent: 40px;
+  color: var(--voucherlight);
 }
 
 /* Start of input name */
@@ -141,7 +129,7 @@ input#voucherCode {
 /* End of input name */
 
 .button {
-  background:  var(--clr-dark);
+  background: var(--login);
   border-radius: 24px;
   border: none;
   margin: 0 auto;
@@ -159,7 +147,7 @@ input#voucherCode {
 .button p {
   font-size: 16px;
   font-weight: 500;
-  color: var(--clr-btns-text);
+  color: var(--logintext);
   text-align: center;
 }
 .button:active {
@@ -194,7 +182,7 @@ input#voucherCode {
 /* Start of Main Greeting */
 .maingreeting {
   font-family: "sf-pro-regular", sans-serif;
-  color: var(--clr-dark);
+  color: var(--maingreeting);
   font-weight: 500;
   font-size: 14px;
   text-align: center;

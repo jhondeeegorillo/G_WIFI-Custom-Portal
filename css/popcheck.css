@@ -91,10 +91,10 @@ html {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  background-color: #231f20;
+  background-color: var(--login);
   border-radius: 100px;
   border: none;
-  color: rgb(255, 255, 255);
+  color: var(--logintext);
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -102,7 +102,7 @@ html {
   padding-bottom: 5px;
 }
 .popcheck button:active {
-  background: var(--clr-btns-actv-bg);
+  background: var(--login);
   transform: scale(0.9);
   border: none;
   outline: none;

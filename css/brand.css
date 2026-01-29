@@ -23,7 +23,7 @@ html {
 .brand {
   font-size: 12px;
   font-weight: 500;
-  color: var(--clr-mdark);
+  color: var(--brand);
   float: left;
   padding-bottom: 20px;
   text-align: center;

@@ -42,7 +42,7 @@ html {
   transform: translate(-50%, -50%);
   left: 75%;
   width: 50%;
-  transition: 1s ease-in-out;
+  transition: 1s 0.5s ease-in-out;
   display: grid;
   grid-template-columns: 1fr;
   z-index: 5;
@@ -54,7 +54,7 @@ form {
   justify-content: center;
   flex-direction: column;
   padding: 0rem 5rem;
-  transition: all 0.4s 0.4s;
+  transition: all 0.25s 0.75s;
   /* overflow: hidden; */
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -143,12 +143,12 @@ form.sign-in-form {
 
 .btn {
   width: 150px;
-  background-color: #5995fd;
+  background-color: var(--rates);
   border: none;
   outline: none;
   height: 49px;
   border-radius: 24px;
-  color: #fff;
+  color: var(--ratestext);
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
@@ -180,7 +180,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background: var(--clr-dark);
+  background: var(--Lcircle);
   transition: 1.5s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -189,7 +189,7 @@ form.sign-in-form {
 .image {
   width: 100%;
   height: auto;
-  transition: 1.75s ease-in-out;
+  transition: 1.5s ease-in-out;
 }
 
 .panel {
@@ -229,7 +229,7 @@ form.sign-in-form {
 
 .btn.transparent {
   margin: 0;
-  background: var(--clr-mdark);
+  background: var(--rates);
   width: 180px;
   height: 40px;
   font-weight: 500;
@@ -319,7 +319,7 @@ form.sign-in-form {
 
   .image {
     width: 250px;
-    transition: 1.25s ease-in-out;
+    transition: 1.5s ease-in-out;
   }
 
   .panel .content {
@@ -349,7 +349,7 @@ form.sign-in-form {
     bottom: 68%;
     right: initial;
     top: initial;
-    transition: 1.2s ease-in-out;
+    transition: 1.5s ease-in-out;
   }
 
   .container.sign-up-mode:before {
