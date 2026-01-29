@@ -28,7 +28,7 @@ html {
   --login: rgb(35 31 32);
   --logintext: rgb(255, 255, 255);
   --voucherdark: rgb(35 31 32);
-  --voucherlight: #ecedee;
+  --voucherlight: rgb(125 126 126);
   --voucherline: #ecedee;
   --rates: rgb(125 126 126);
   --ratestext: rgb(255, 255, 255);

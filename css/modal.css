@@ -45,12 +45,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px; /* Space between images */
-  padding-top: 10px;
 }
 
 .image-container img {
   width: 100%; /* Responsive images */
-  max-height: 175px;
+  max-height: 180px;
   object-fit: contain; /* Preserve aspect ratio */
   border-radius: 8px;
   cursor: pointer;
@@ -74,8 +73,7 @@
 }
 
 .instructions-container h4 {
-  margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 18px;
   color: var(--insdark);
 }
 
@@ -83,7 +81,7 @@
   margin: 1px 0;
   line-height: 1.5;
   color: var(--inslight);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .instructions-container p b {
@@ -111,5 +109,5 @@ width: 100%;
   margin: 1px 0;
   line-height: 1.5;
   color: var(--insdark);
-  font-size: 14px;
+  font-size: 12px;
 }
