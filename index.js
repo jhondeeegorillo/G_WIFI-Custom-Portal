@@ -35,11 +35,11 @@ var isCommited = false; // Flag to prevent duplicate submissions
 
 // Error messages mapped to server response codes
 var errorHintMap = {
-  0: "You are now connected. Enjoy!",
+  0: "Connected!",
   "-41502": "Incorrect voucher code.",
-  "-41503": "This voucher code is expired.",
-  "-41504": "The traffic used by this voucher code has reached the limit.",
-  "-41505": "The number of users has reached the limit.",
+  "-41503": "Voucher code expired.",
+  "-41504": "Voucher limit reached.",
+  "-41505": "Max users reached.",
 };
 
 // Function to handle form submission
@@ -86,8 +86,7 @@ function handleSubmit(event) {
     if (data.errorCode === 0) {
       // Successful authentication
       openPopup(); // Show success popup
-      window.location.href = "https://www.youtube.com/@jhondeeegorillo"; // Redirect to landing page
-      // Redirect to the Google Forms URL as the landing page
+      window.location.href = "https://www.google.com/"; // Redirect to landing page
       // window.location.href = "https://www.youtube.com/@jhondeeegorillo";
     } else {
       isCommited = false; // Allow retries on failure
