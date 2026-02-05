@@ -24,7 +24,6 @@
   top: 20px;
   right: 20px;
   font-size: 24px;
-  cursor: pointer;
   width: 30px;
   height: 30px;
   background-color: var(--login);
@@ -52,7 +51,6 @@
   max-height: 180px;
   object-fit: contain; /* Preserve aspect ratio */
   border-radius: 8px;
-  cursor: pointer;
   transition: transform 0.2s;
 }
 
