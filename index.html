@@ -17,6 +17,7 @@
       <link href="./css/popcheck.css" type="text/css" rel="stylesheet" />
       <link href="./css/counter.css" type="text/css" rel="stylesheet" />
       <link href="./css/modal.css" type="text/css" rel="stylesheet" />
+      <link href="./css/auto-popup.css" type="text/css" rel="stylesheet" />
    </head>
 
    <body class="portal disable-text-selection">
@@ -27,6 +28,32 @@
          <span class="loader"></span>
       </div>
       <!-- End of Preloader -->
+
+      <!-- Start of Auto Popup Promo -->
+    <div class="popup-screen">
+      <div class="popup-box">
+         <h2>
+            <img src="./img/logo.png" class="popup-logo" />
+         </h2>
+         <p></p>
+         <span class="close-popup">&times;</span>
+         <img src="img/promo.png" class="popup-promo" alt=""/>
+         <a>AVAILABLE IN-STORE & VIA GCASH</a>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        setTimeout(function open(event) {
+          document.querySelector(".popup-screen");
+        }, 1000);
+      });
+
+      document.querySelector(".close-popup").addEventListener("click", function () {
+        document.querySelector(".popup-screen").style.display = "none";
+      });
+    </script>
+    <!-- End of Auto Popup Promo -->
 
       <!-- playbac -->
       <main class="main active">
@@ -136,11 +163,7 @@
 
                            <!-- Scrollable text for instructions -->
                            <div class="instructions-container">
-                              <h4>How to Pay via GCash</h4>
                               <div class="ins-con">
-                                 <a href="https://www.youtube.com/watch?v=qPsCprLkoIc" target="_blank">
-                                    Full tutorial here.
-                                 </a>
                                  <p>1. Connect to <b>G_VOUCHER WIFI.</b></p>
                                  <p>2. Open your <b id="gcash">GCash</b> app.</p>
                                  <p>3. Send the exact amount to:
@@ -148,7 +171,10 @@
                                     <br>
                                  </p>
                                  <p>4. Receive your voucher code via SMS.</p>
-                                 <p>5. Enter the voucher code on the Wi-Fi portal.</p>
+                                 <p>5. Enter the code on the Wi-Fi portal.</p>
+                                 <a href="https://www.youtube.com/watch?v=qPsCprLkoIc" target="_blank">
+                                    Full tutorial here
+                                 </a>
                               </div>
                            </div>
                         </div>

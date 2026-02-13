@@ -24,10 +24,11 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  width: 80%;
   border-radius: 36px;
   padding: 15px;
   background-color: #ffffff;
+  --max-width: 18rem;
+  width: min(90% - 0rem, var(--max-width));
 }
 
 .rates tr {
@@ -57,14 +58,10 @@ html {
 
 #th-price {
   border-radius: 22px 0px 0px 0px;
-  -webkit-border-radius: 22px 0px 0px 0px;
-  -moz-border-radius: 24px 0px 0px 0px;
 }
 
 #th-udp {
   border-radius: 0px 0px 22px 22px;
-  -webkit-border-radius: 0px 0px 22px 22px;
-  -moz-border-radius: 0px 0px 22px 22px;
 }
 
 #disclaimer {

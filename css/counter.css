@@ -32,8 +32,5 @@ html {
   width: 30px;
   height: 30px;
   background-color: #231f20;
-  cursor: pointer;
   border-radius: 50%;
-  -webkit-tap-highlight-color: #231f20;
-  -webkit-tap-highlight-color: transparent;
 }

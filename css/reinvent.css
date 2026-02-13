@@ -53,7 +53,7 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0rem 5rem;
+  padding: 0rem 2rem;
   transition: all 0.25s 0.75s;
   /* overflow: hidden; */
   grid-column: 1 / 2;
@@ -71,7 +71,7 @@ form.sign-in-form {
 
 .title-wifi-rates {
   font-size: 30px;
-  color: rgb(35 31 32);
+  color: var(--rates);
   margin-bottom: 10px;
 }
 
@@ -103,7 +103,7 @@ form.sign-in-form {
   line-height: 1;
   font-weight: 500;
   font-size: 1.1rem;
-  color: #333;
+  color: #333333;
 }
 
 .input-field input::placeholder {
@@ -136,32 +136,20 @@ form.sign-in-form {
   transition: 0.3s;
 }
 
-.social-icon:hover {
-  color: #4481eb;
-  border-color: #4481eb;
-}
-
 .btn {
   width: 150px;
   background-color: var(--rates);
   border: none;
   outline: none;
   height: 49px;
-  border-radius: 24px;
+  border-radius: 50px;
   color: var(--ratestext);
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
-  cursor: pointer;
   transition: 1s;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
 }
 
-.btn:hover {
-  background-color: #000000;
-}
 .panels-container {
   position: absolute;
   height: 100%;
@@ -236,6 +224,28 @@ form.sign-in-form {
   font-size: 16px;
 }
 
+.btn.transparent:hover,
+.btn.transparent:active,
+.btn.transparent:focus-visible{
+  box-shadow: 0 0 5px var(--btnhover);
+  transition: all 0.2s ease;
+  transform: scale(1.01);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 .right-panel .image,
 .right-panel .content {
   transform: translateX(800px);
@@ -280,7 +290,7 @@ form.sign-in-form {
   pointer-events: all;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 665px) {
   .container {
     min-height: 800px;
     height: 100vh;

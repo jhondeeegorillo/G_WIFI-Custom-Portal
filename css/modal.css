@@ -2,10 +2,7 @@
 .modal {
   display: none; /* Hidden by default */
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
   z-index: 1000;
 }
 
@@ -14,9 +11,11 @@
   margin: auto;
   background-color: white;
   padding: 20px;
-  width: 77%;
   border-radius: 36px;
   text-align: center;
+  --max-width: 18rem;
+  width: min(90% - 0rem, var(--max-width));
+  box-shadow: 0px 0px 20px 20px var(--bg);
 }
 
 .close-button {
@@ -36,6 +35,27 @@
   justify-items: center;
 }
 
+.close-button:hover,
+.close-button:active,
+.close-button:focus-visible{
+  box-shadow: 0 0 5px var(--btnhover);
+  transition: all 0.2s ease;
+  transform: scale(1.01);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Image container with scrollable area */
 .image-container {
   max-height: 220px; /* Set maximum height for scrolling */
@@ -48,10 +68,9 @@
 
 .image-container img {
   width: 100%; /* Responsive images */
-  max-height: 180px;
+  max-height: 150px;
   object-fit: contain; /* Preserve aspect ratio */
   border-radius: 8px;
-  transition: transform 0.2s;
 }
 
 /*.image-container img:hover {*/
@@ -70,14 +89,7 @@
   margin-top: 15px;
 }
 
-.instructions-container h4 {
-  font-size: 18px;
-  color: var(--insdark);
-}
-
 .instructions-container p {
-  margin: 1px 0;
-  line-height: 1.5;
   color: var(--inslight);
   font-size: 12px;
 }
@@ -90,6 +102,10 @@
 text-align: left;
 flex-direction: column;
 width: 100%;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 #number {
@@ -112,8 +128,41 @@ width: 100%;
 }
 
 .instructions-container a {
-  margin: 1px 0;
-  line-height: 1.5;
-  color: var(--insdark);
+  color: rgb(255, 255, 255);
+  background-color: var(--insdark);
   font-size: 12px;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.instructions-container a:hover,
+.instructions-container a:active,
+.instructions-container a:focus-visible{
+  box-shadow: 0 0 5px var(--btnhover);
+  transition: all 0.2s ease;
+  transform: scale(1.01);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

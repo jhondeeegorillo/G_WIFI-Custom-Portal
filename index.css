@@ -79,7 +79,6 @@ body.portal {
   width: 100%;
   padding: 12px;
   text-decoration: none;
-  cursor: pointer;
 }
 
 #rotatingText1, #rotatingText2 {
@@ -100,18 +99,17 @@ body.portal {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 24px;
+  border-radius: 50px;
   color: var(--voucherdark);
-  letter-spacing: 0.5px;
-  caret-color: var(--voucherline);
+  caret-color: var(--voucherdark);
 }
 
-.input:focus {
-  outline: 2px solid var(--voucherline);
-}
-
-.input:focus::placeholder {
-  color: var(--voucherlight);
+.input:hover,
+.input:focus
+.input:active,
+.input:focus-visible{
+  box-shadow: 0 0 10px var(--btnhoverinput);
+  outline: none;
 }
 
 /* Start of input name */
@@ -130,7 +128,7 @@ body.portal {
 
 .button {
   background: var(--login);
-  border-radius: 24px;
+  border-radius: 50px;
   border: none;
   margin: 0 auto;
   --max-width: 18rem;
@@ -139,9 +137,27 @@ body.portal {
   padding-bottom: 14px;
   display: block;
   outline: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
+}
+
+.button:hover,
+.button:active,
+.button:focus-visible{
+  box-shadow: 0 0 5px var(--btnhover);
+  transition: all 0.2s ease;
+  transform: scale(1.01);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .button p {
@@ -197,8 +213,8 @@ body.portal {
   
   display: block;
   position: relative;
-  --max-width: 20rem;
-  width: min(100% - 0rem, var(--max-width));
+  --max-width: 18rem;
+  width: min(90% - 0rem, var(--max-width));
   border-radius: 36px;
   align-items: center;
   padding-top: 12px;

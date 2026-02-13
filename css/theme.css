@@ -37,6 +37,8 @@ html {
   --Lcircle: rgb(35 31 32);
   --insdark: rgb(35 31 32);
   --inslight: rgb(125 126 126);
+  --btnhover: rgb(125 126 126);
+  --btnhoverinput: #ecedee;
 }
 
 .auto-grid {
@@ -99,9 +101,6 @@ html {
   outline: 4px solid var(--radio-color, currentColor);
   outline-offset: 3px;
   border-radius: 50%;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
 }
 .color-picker input[type="radio"]:active {
   transform: scale(0.9);
