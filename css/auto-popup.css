@@ -33,7 +33,7 @@ html {
 
 .popup-box {
  position: relative;
- background: rgb(255, 255, 255);
+ background: var(--card);
  display: flex;
  justify-content: center;
  align-items: center;
@@ -84,7 +84,7 @@ html {
   height: 30px;
   background-color: var(--login);
   border-radius: 100px;
-  color: rgb(255, 255, 255);
+  color: var(--logintext);
   text-align: center;
   align-items: center;
   display: flex;
@@ -95,20 +95,7 @@ html {
 .close-popup:hover,
 .close-popup:active,
 .close-popup:focus-visible{
-  box-shadow: 0 0 5px var(--btnhover);
-  transition: all 0.2s ease;
   transform: scale(1.01);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-  100% {
-    transform: scale(1);
-  }
+  outline: 2px solid var(--login);
+  outline-offset:2px;
 }

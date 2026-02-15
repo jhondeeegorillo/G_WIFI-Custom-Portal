@@ -9,7 +9,7 @@
 .modal-content {
   position: relative;
   margin: auto;
-  background-color: white;
+  background-color: var(--card);
   padding: 20px;
   border-radius: 36px;
   text-align: center;
@@ -27,7 +27,7 @@
   height: 30px;
   background-color: var(--login);
   border-radius: 100px;
-  color: rgb(255, 255, 255);
+  color: var(--logintext);
   text-align: center;
   align-items: center;
   display: flex;
@@ -38,22 +38,9 @@
 .close-button:hover,
 .close-button:active,
 .close-button:focus-visible{
-  box-shadow: 0 0 5px var(--btnhover);
-  transition: all 0.2s ease;
   transform: scale(1.01);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-  100% {
-    transform: scale(1);
-  }
+  outline: 2px solid var(--login);
+  outline-offset:2px;
 }
 
 /* Image container with scrollable area */
@@ -128,8 +115,8 @@ user-select: none;
 }
 
 .instructions-container a {
-  color: rgb(255, 255, 255);
-  background-color: var(--insdark);
+  color: var(--logintext);
+  background-color: var(--login);
   font-size: 12px;
   text-decoration: none;
   border-radius: 50px;
@@ -149,20 +136,7 @@ user-select: none;
 .instructions-container a:hover,
 .instructions-container a:active,
 .instructions-container a:focus-visible{
-  box-shadow: 0 0 5px var(--btnhover);
-  transition: all 0.2s ease;
-  transform: scale(1.01);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-  100% {
-    transform: scale(1);
-  }
+  transform: scale(1);
+  outline: 2px solid var(--login);
+  outline-offset:2px;
 }

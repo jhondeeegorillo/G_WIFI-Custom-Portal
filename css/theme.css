@@ -25,6 +25,7 @@ html {
 } */
 :root {
   --maingreeting: rgb(35 31 32);
+  --card: rgb(255, 255, 255);
   --login: rgb(35 31 32);
   --logintext: rgb(255, 255, 255);
   --voucherdark: rgb(35 31 32);
@@ -37,8 +38,6 @@ html {
   --Lcircle: rgb(35 31 32);
   --insdark: rgb(35 31 32);
   --inslight: rgb(125 126 126);
-  --btnhover: rgb(125 126 126);
-  --btnhoverinput: #ecedee;
 }
 
 .auto-grid {

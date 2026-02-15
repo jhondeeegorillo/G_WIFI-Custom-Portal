@@ -36,7 +36,8 @@ body.portal {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--bg);
-  /*background-image: url(img/bg.gif)*/
+  /*background-image: url(img/bg.gif);*/
+  /*background-image: var(--bak-wall);*/
 }
 
 .disable-text-selection {
@@ -100,6 +101,7 @@ body.portal {
   font-size: 18px;
   font-weight: 500;
   border-radius: 50px;
+  background-color: var(--card);
   color: var(--voucherdark);
   caret-color: var(--voucherdark);
 }
@@ -108,8 +110,9 @@ body.portal {
 .input:focus
 .input:active,
 .input:focus-visible{
-  box-shadow: 0 0 10px var(--btnhoverinput);
-  outline: none;
+  transform: scale(1);
+  outline: 2px solid var(--voucherline);
+  outline-offset:2px;
 }
 
 /* Start of input name */
@@ -136,28 +139,14 @@ body.portal {
   padding-top: 14px;
   padding-bottom: 14px;
   display: block;
-  outline: none;
 }
 
 .button:hover,
 .button:active,
 .button:focus-visible{
-  box-shadow: 0 0 5px var(--btnhover);
-  transition: all 0.2s ease;
   transform: scale(1.01);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-  100% {
-    transform: scale(1);
-  }
+  outline: 2px solid var(--login);
+  outline-offset:2px;
 }
 
 .button p {
@@ -168,12 +157,9 @@ body.portal {
 }
 .button:active {
   border: none;
-  outline: none;
 }
 .button:focus {
-  color: var(--clr-btns-text-fcs);
   border: none;
-  outline: none;
 }
 /* End of Omada Buttons */
 
@@ -227,7 +213,7 @@ body.portal {
   clear: both;
 }
 .form-glass {
-  background: rgb(255, 255, 255);
+  background: var(--card);
 }
 
 /* End of Omada Login Box CSS */

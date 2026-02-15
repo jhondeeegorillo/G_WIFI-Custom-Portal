@@ -97,18 +97,7 @@ html {
 .popcheck button:hover,
 .popcheck button:active,
 .popcheck button:focus-visible{
-  box-shadow: 0 0 5px var(--btnhover);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
-  }
-  100% {
-    transform: scale(1);
-  }
+  transform: scale(1.01);
+  outline: 2px solid var(--login);
+  outline-offset:2px;
 }

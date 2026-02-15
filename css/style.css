@@ -35,7 +35,9 @@ body.portal {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-image: var(--bak-wall); */
+  background-color: var(--bg);
+  /*background-image: url(img/bg.gif);*/
+  /*background-image: var(--bak-wall);*/
 }
 
 .disable-text-selection {
