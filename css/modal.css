@@ -15,7 +15,6 @@
   text-align: center;
   --max-width: 18rem;
   width: min(90% - 0rem, var(--max-width));
-  box-shadow: 0px 0px 20px 20px var(--bg);
 }
 
 .close-button {
@@ -55,9 +54,8 @@
 
 .image-container img {
   width: 100%; /* Responsive images */
-  max-height: 150px;
+  max-height: 180px;
   object-fit: contain; /* Preserve aspect ratio */
-  border-radius: 8px;
 }
 
 /*.image-container img:hover {*/

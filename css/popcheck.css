@@ -22,16 +22,16 @@ html {
 }
 
 .popcheck {
-  --max-width: 30rem;
-  width: min(90% - 0rem, var(--max-width));
-  background: rgb(255 255 255);
+  --max-width: 20rem;
+  width: min(100% - 0rem, var(--max-width));
+  background-color: var(--card);
   border-radius: 36px;
   display: block;
   position: absolute;
   text-align: center;
-  padding: 5px;
+  padding: 6px;
   visibility: hidden;
-  top: 82px;
+  top: 77px;
 }
 .open-popup {
   visibility: visible;

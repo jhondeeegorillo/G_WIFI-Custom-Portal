@@ -30,14 +30,15 @@ html {
   --logintext: rgb(255, 255, 255);
   --voucherdark: rgb(35 31 32);
   --voucherlight: rgb(125 126 126);
-  --voucherline: #ecedee;
+  --voucherline: rgb(125 126 126);
   --rates: rgb(125 126 126);
   --ratestext: rgb(255, 255, 255);
-  --brand: rgb(125 126 126);
+  --brand: rgb(89 90 90);
   --bg: #ecedee;
   --Lcircle: rgb(35 31 32);
   --insdark: rgb(35 31 32);
-  --inslight: rgb(125 126 126);
+  --inslight: rgb(89 90 90);
+  --bak-wall: url(wallpaper.jpg);
 }
 
 .auto-grid {

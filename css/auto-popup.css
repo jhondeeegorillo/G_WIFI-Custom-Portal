@@ -13,8 +13,8 @@ html {
 
 * {
   font-family: "sf-pro-regular", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -38,7 +38,6 @@ html {
  justify-content: center;
  align-items: center;
  flex-direction: column;
- margin: 20px;
  padding: 20px;
  border-radius: 36px;
  --max-width: 18rem;
@@ -56,12 +55,12 @@ html {
 .popup-logo {
   height: 100px;
   width: auto;
-  margin-top: -14px;
 }
 
 .popup-promo {
-  width: 300px;
   margin-bottom: 10px;
+  height: auto;
+  width: 100%;
 }
 
 .popup-box a{
