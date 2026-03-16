@@ -70,7 +70,7 @@ body.portal {
   font-size: 16px;
   font-weight: 500;
   display: block;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 10px;
   text-align: left;
   border: 2px solid var(--voucherline);
@@ -104,12 +104,11 @@ body.portal {
 }
 
 .input:hover,
-.input:focus
+.input:focus,
 .input:active,
 .input:focus-visible{
-  transform: scale(1);
-  outline: 2px solid var(--voucherline);
-  outline-offset:2px;
+  outline: none;
+  outline-offset: none;
 }
 
 /* Start of input name */
@@ -131,17 +130,17 @@ body.portal {
   border-radius: 50px;
   border: none;
   margin: 0 auto;
-  --max-width: 18rem;
+  --max-width: 20rem;
   width: min(90% - 0rem, var(--max-width));
   padding-top: 14px;
   padding-bottom: 14px;
   display: block;
+  margin-bottom: 5px;
 }
 
 .button:hover,
 .button:active,
 .button:focus-visible{
-  transform: scale(1.01);
   outline: 2px solid var(--login);
   outline-offset:2px;
 }
@@ -164,6 +163,8 @@ body.portal {
 .main-logo img {
   height: 100px;
   width: auto;
+  object-fit: contain; /* Preserve aspect ratio */
+  
 }
 
 .main-logo p {
@@ -195,7 +196,7 @@ body.portal {
   
   display: block;
   position: relative;
-  --max-width: 18rem;
+  --max-width: 20rem;
   width: min(90% - 0rem, var(--max-width));
   border-radius: 36px;
   align-items: center;

@@ -55,7 +55,7 @@ form {
   flex-direction: column;
   padding: 0rem 2rem;
   transition: all 0.25s 0.75s;
-  /* overflow: hidden; */
+  overflow: hidden;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
@@ -152,27 +152,31 @@ form.sign-in-form {
 .container:before {
   content: "";
   position: absolute;
-  height: 1500px;
-  width: 1500px;
-  top: -10%;
-  right: 48%;
+  height: 1000px;
+  width: 1000px;
+  top: 50%;
+  right: 50%;
   transform: translateY(-50%);
   background: var(--Lcircle);
+  outline: 25px solid var(--inslight);
+  outline-offset:25px;
   transition: 1.5s ease-in-out;
   border-radius: 50%;
   z-index: 6;
 }
 
 .image {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: var(--rates);
-  border: 50px solid var(--inslight);
+  outline: 25px solid var(--inslight);
+  outline-offset:25px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 1.5s ease-in-out;
+  margin-top: 25px;
 }
 
 .panel {
@@ -216,13 +220,12 @@ form.sign-in-form {
   font-weight: 500;
   font-size: 16px;
   border: none;
-  margin-bottom: 20px;
+  margin: 50px;
 }
 
 .btn.transparent:hover,
 .btn.transparent:active,
 .btn.transparent:focus-visible{
-  transform: scale(1.01);
   outline: 2px solid var(--rates);
   outline-offset:2px;
 }
@@ -236,7 +239,7 @@ form.sign-in-form {
 
 .container.sign-up-mode:before {
   transform: translate(100%, -50%);
-  right: 52%;
+  right: 50%;
 }
 
 .container.sign-up-mode .left-panel .image,
@@ -271,9 +274,8 @@ form.sign-in-form {
   pointer-events: all;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 650px) {
   .container {
-    min-height: 800px;
     height: 100vh;
   }
   .signin-signup {
@@ -306,9 +308,9 @@ form.sign-in-form {
   .left-panel {
     grid-row: 1 / 2;
   }
-
+  
   .image {
-    transition: 1.5s ease-in-out;
+    display: none;
   }
 
   .panel .content {
@@ -324,11 +326,11 @@ form.sign-in-form {
   }
 
   .container:before {
-    width: 1500px;
-    height: 1500px;
+    width: 1000px;
+    height: 1000px;
     transform: translateX(-50%);
-    left: 30%;
-    bottom: 68%;
+    left: 50%;
+    bottom: 70%;
     right: initial;
     top: initial;
     transition: 1.5s ease-in-out;
@@ -336,7 +338,7 @@ form.sign-in-form {
 
   .container.sign-up-mode:before {
     transform: translate(-50%, 100%);
-    bottom: 32%;
+    bottom: 30%;
     right: initial;
   }
 
@@ -366,23 +368,21 @@ form.sign-in-form {
     padding: 0 0.5rem;
   }
 
-  .image {
-    display: block;
-  }
-  .panel .content {
-    padding: 0.5rem 2rem;
-  }
-  .container {
-    padding: 1.5rem;
+  .forms-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 
   .container:before {
-    bottom: 70%;
+    bottom: 75%;
     left: 50%;
   }
 
   .container.sign-up-mode:before {
-    bottom: 30%;
+    bottom: 25%;
     left: 50%;
   }
 }

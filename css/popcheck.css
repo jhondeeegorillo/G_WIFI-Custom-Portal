@@ -31,7 +31,7 @@ html {
   text-align: center;
   padding: 6px;
   visibility: hidden;
-  top: 77px;
+  top: 82px;
 }
 .open-popup {
   visibility: visible;
@@ -97,7 +97,6 @@ html {
 .popcheck button:hover,
 .popcheck button:active,
 .popcheck button:focus-visible{
-  transform: scale(1.01);
   outline: 2px solid var(--login);
   outline-offset:2px;
 }

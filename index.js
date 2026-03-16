@@ -86,8 +86,11 @@ function handleSubmit(event) {
     if (data.errorCode === 0) {
       // Successful authentication
       openPopup(); // Show success popup
-      window.location.href = "https://www.google.com/"; // Redirect to landing page
+      // Redirect to landing page
       // window.location.href = "https://www.youtube.com/@jhondeeegorillo";
+      isCommited = true;
+      landingUrl = data.result || landingUrl
+      window.location.href = landingUrl;
     } else {
       isCommited = false; // Allow retries on failure
       openPopup(); // Show error popup

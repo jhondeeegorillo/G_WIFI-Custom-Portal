@@ -40,7 +40,7 @@ html {
  flex-direction: column;
  padding: 20px;
  border-radius: 36px;
- --max-width: 18rem;
+ --max-width: 20rem;
  width: min(90% - 0rem, var(--max-width));
 }
 
@@ -52,13 +52,7 @@ html {
   color: var(--inslight);
 }
 
-.popup-logo {
-  height: 100px;
-  width: auto;
-}
-
 .popup-promo {
-  margin-bottom: 10px;
   height: auto;
   width: 100%;
 }
@@ -66,8 +60,9 @@ html {
 .popup-box a{
   color: var(--logintext);
   background: var(--login);
-  padding-top: 14px;
-  padding-bottom: 14px;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 50px;
   font-size: 12px;
   --max-width: 18rem;
@@ -94,7 +89,6 @@ html {
 .close-popup:hover,
 .close-popup:active,
 .close-popup:focus-visible{
-  transform: scale(1.01);
   outline: 2px solid var(--login);
   outline-offset:2px;
 }
