@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "sf-pro-regular";
+  src: url(./font/ProductSans.ttf);
+}
+@font-face {
+  font-family: "space-tech-italic";
+  src: url(./font/ProductSans-Medium.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "sf-pro-regular", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  --bak-wall: url(wallpaper.jpg);
+} */
+:root {
+  --maingreeting: rgb(35 31 32);
+  --card: rgb(255, 255, 255);
+  --login: rgb(35 31 32);
+  --logintext: rgb(255, 255, 255);
+  --voucherdark: rgb(35 31 32);
+  --voucherlight: rgb(125 126 126);
+  --voucherline: rgb(125 126 126);
+  --rates: rgb(125 126 126);
+  --ratestext: rgb(255, 255, 255);
+  --brand: rgb(89 90 90);
+  --bg: #ecedee;
+  --Lcircle: rgb(35 31 32);
+  --insdark: rgb(35 31 32);
+  --inslight: rgb(89 90 90);
+  --bak-wall: url(wallpaper.jpg);
+}
+
+.auto-grid {
+  --min-column-size: 225px;
+
+  display: grid;
+  gap: clamp(1rem, 5vmax, 1.625rem);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--min-column-size)), 1fr)
+  );
+}
+
+.wraps {
+  --max-width: 55rem;
+  width: min(100% - 0rem, var(--max-width));
+  margin-inline: auto;
+}
+
+.card {
+  color: var(--clr-text);
+  background-color: var(--clr-card-bg);
+  border: 1.5px solid var(--clr-card-border);
+}
+
+.card > * {
+  margin: 0;
+}
+
+.card > *:not(:last-child) {
+  margin-bottom: 0rem;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.color-picker > fieldset {
+  display: flex;
+  gap: 1.9rem;
+  width: fit-content;
+  padding: 1rem 1rem;
+  margin-inline: auto;
+  border-radius: 2rem 2rem 2rem 2rem;
+  border: none;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.color-picker input[type="radio"] {
+  appearance: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  outline: 4px solid var(--radio-color, currentColor);
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+.color-picker input[type="radio"]:active {
+}
+
+.color-picker input[type="radio"]:checked {
+  background-color: var(--radio-color);
+}
+
+.color-picker input[type="radio"]#default {
+  --radio-color: #e35cb9;
+}
+.color-picker input[type="radio"]#dark {
+  --radio-color: #555555;
+}
+.color-picker input[type="radio"]#purple {
+  --radio-color: #a147ef;
+}
+.color-picker input[type="radio"]#blue {
+  --radio-color: #1f75ff;
+}
+.color-picker input[type="radio"]#orange {
+  --radio-color: #f66429;
+}
+.color-picker input[type="radio"]#green {
+  --radio-color: #0dc901;
+
+}
