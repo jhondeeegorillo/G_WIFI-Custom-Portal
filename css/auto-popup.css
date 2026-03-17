@@ -84,6 +84,14 @@ html {
   font-size: 12px;
 }
 
+.popup-box c{
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: left;
+  display: flex;
+  color: var(--login)
+}
+
 /* By default, hide the elements */
 .android-element, .ios-element, .desktop-element {
     display: none;
