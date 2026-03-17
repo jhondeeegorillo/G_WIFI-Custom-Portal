@@ -35,9 +35,37 @@
          <p></p>
          <span class="close-popup">&times;</span>
          <img src="img/rates.png" class="popup-promo" alt=""/>
-         <a>&#169; 2026 G WIFI. All rights reserved.</a>
+         <b>&#169; 2026 G WIFI. All rights reserved.</b>
+       <div class="android-element">
+         <a href="intent://10.10.10.2/#Intent;scheme=http;end">OPEN IN BROWSER</a>
+       </div>
+       <div class="ios-element"></div>
+       <div class="desktop-element"></div>
       </div>
     </div>
+
+    <script>
+    var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.iOS());
+        }
+    };
+
+    // Add a class to the body element based on the detected OS
+    if (isMobile.Android()) {
+        document.body.classList.add('is-android');
+    } else if (isMobile.iOS()) {
+        document.body.classList.add('is-ios');
+    } else {
+        document.body.classList.add('is-desktop');
+    }
+    </script>
 
     <script type="text/javascript">
       window.addEventListener("load", function () {
@@ -169,9 +197,8 @@
                                  </p>
                                  <p>4. Receive your voucher code via SMS.</p>
                                  <p>5. Enter the code on the Wi-Fi portal.</p>
-                                 <a href="https://www.youtube.com/watch?v=qPsCprLkoIc" target="_blank">
-                                    Full tutorial here
-                                 </a>
+                                 <a href="https://www.youtube.com/watch?v=qPsCprLkoIc" target="_blank">Full tutorial here</a>
+
                               </div>
                            </div>
                         </div>

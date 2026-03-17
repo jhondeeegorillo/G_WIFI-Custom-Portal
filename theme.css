@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "sf-pro-regular";
+  src: url(./font/ProductSans.ttf);
+}
+@font-face {
+  font-family: "space-tech-italic";
+  src: url(./font/ProductSans-Medium.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "sf-pro-regular", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rates {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-radius: 36px;
+  padding: 20px;
+  background-color: var(--card);
+  --max-width: 20rem;
+  width: min(90% - 0rem, var(--max-width));
+}
+
+.rates tr {
+  background: var(--clr-rates-td-bg);
+  color: var(--clr-rates-td-text);
+}
+
+.thead th {
+  background: #231f20;
+  color: var(--clr-rates-th-text);
+  word-spacing: 3px;
+  padding: 5px;
+}
+
+.tfoot th {
+  font-size: 10px;
+  background: #231f20;
+  color: var(--clr-rates-th-text);
+  word-spacing: 0px;
+  padding: 10px;
+}
+.tfoot th li {
+  font-size: 10px;
+}
+
+#th-price {
+  border-radius: 22px 0px 0px 0px;
+}
+
+#th-udp {
+  border-radius: 0px 0px 22px 22px;
+}
+
+#disclaimer {
+  font-size: 13px;
+}
+
+.rates sup {
+  color: var(--clr-rates-sup);
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  height: 30px;
+}
+
+tr {
+  height: 30px;
+}

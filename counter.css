@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "sf-pro-regular";
+  src: url(./font/ProductSans.ttf);
+}
+@font-face {
+  font-family: "space-tech-italic";
+  src: url(./font/ProductSans-Medium.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "sf-pro-regular", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.popup-screen {
+  z-index: 9;
+  position: fixed;
+  backdrop-filter: blur(25px);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+ position: relative;
+ background: var(--card);
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ padding: 20px;
+ border-radius: 36px;
+ --max-width: 20rem;
+ width: min(90% - 0rem, var(--max-width));
+}
+
+.popup-box h2{
+  color: var(--insdark);
+}
+
+.popup-box p{
+  color: var(--inslight);
+}
+
+.popup-promo {
+  height: auto;
+  width: 100%;
+}
+
+.popup-box a{
+  color: var(--logintext);
+  background-color: var(--login);
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 5px;
+}
+
+.popup-box a:hover,
+.popup-box a:active,
+.popup-box a:focus-visible{
+  outline: 2px solid var(--login);
+  outline-offset:2px;
+}
+
+.popup-box b{
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+/* By default, hide the elements */
+.android-element, .ios-element, .desktop-element {
+    display: none;
+}
+
+/* Show Android element if the body has the 'is-android' class */
+body.is-android .android-element {
+    display: block; /* or inline, flex, etc., depending on the element type */
+}
+
+/* Show iOS element if the body has the 'is-ios' class */
+body.is-ios .ios-element {
+    display: none;
+}
+
+/* Show desktop element if the body has the 'is-desktop' class */
+body.is-desktop .desktop-element {
+    display: none;
+}
+
+.close-popup{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--login);
+  border-radius: 100px;
+  color: var(--logintext);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.close-popup:hover,
+.close-popup:active,
+.close-popup:focus-visible{
+  outline: 2px solid var(--login);
+  outline-offset:2px;
+}
