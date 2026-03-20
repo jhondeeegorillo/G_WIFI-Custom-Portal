@@ -15,6 +15,7 @@
   text-align: center;
   --max-width: 20rem;
   width: min(90% - 0rem, var(--max-width));
+  box-shadow: 0px 0px 20px 20px var(--bg);
 }
 
 .close-button {
@@ -74,10 +75,15 @@
   font-size: 16px;
 }
 
+.instructions-container blnk {
+  color: transparent;
+}
+
 .instructions-container p b {
   color: var(--insdark); /* Change to your desired color */
   font-size: 16px; /* Adjust font size if needed */
 }
+
 .ins-con{
 text-align: left;
 flex-direction: column;
