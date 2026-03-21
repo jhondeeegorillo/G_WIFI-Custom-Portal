@@ -1,10 +1,6 @@
 @font-face {
-  font-family: "sf-pro-regular";
-  src: url(./font/ProductSans.ttf);
-}
-@font-face {
-  font-family: "space-tech-italic";
-  src: url(./font/ProductSans-Medium.ttf);
+  font-family: "Manrope";
+  src: url(./font/Manrope.ttf);
 }
 
 html {
@@ -12,7 +8,7 @@ html {
 }
 
 * {
-  font-family: "sf-pro-regular", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin: 0;
@@ -33,11 +29,13 @@ html {
   --voucherline: rgb(125 126 126);
   --rates: rgb(125 126 126);
   --ratestext: rgb(255, 255, 255);
-  --brand: rgb(89 90 90);
+  --brand: rgba(35, 31, 32, 0.750);
   --bg: #ecedee;
   --Lcircle: rgb(35 31 32);
+  --Scircle: rgb(125 126 126);
+  --Scircleb: rgb(89 90 90);
   --insdark: rgb(35 31 32);
-  --inslight: rgb(89 90 90);
+  --inslight: rgb(125 126 126);
   --bak-wall: url(wallpaper.jpg);
 }
 
