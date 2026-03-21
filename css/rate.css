@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Manrope";
+  src: url(./font/Manrope.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rates {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-radius: 36px;
+  padding: 20px;
+  background-color: var(--card);
+  --max-width: 20rem;
+  width: min(90% - 0rem, var(--max-width));
+}
+
+table {
+  width: auto;
+}
+
+th {
+  height: auto;
+  outline: solid 2px var(--bg);
+  font-size: 25px;
+  color: var(--insdark);
+}
+
+td {
+  height: auto;
+  outline: solid 2px var(--bg);
+  font-size: 25px;
+  color: var(--inslight);
+}

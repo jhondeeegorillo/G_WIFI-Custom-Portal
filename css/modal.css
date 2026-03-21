@@ -1,0 +1,141 @@
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  background-color: var(--card);
+  padding: 20px;
+  border-radius: 36px;
+  text-align: center;
+  --max-width: 20rem;
+  width: min(90% - 0rem, var(--max-width));
+  box-shadow: 0px 0px 20px 20px var(--bg);
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--login);
+  border-radius: 100px;
+  color: var(--logintext);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.close-button:hover,
+.close-button:active,
+.close-button:focus-visible{
+  outline: 2px solid var(--login);
+  outline-offset:2px;
+}
+
+/* Image container with scrollable area */
+.image-container {
+  max-height: 220px; /* Set maximum height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container img {
+  width: 100%; /* Responsive images */
+  max-height: 200px;
+  object-fit: contain; /* Preserve aspect ratio */
+}
+
+/*.image-container img:hover {*/
+ /* transform: scale(1.05);*/ /* Slight zoom on hover */
+/*}*/
+
+/* Instructions container */
+.instructions-container {
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+
+.instructions-container p {
+  color: var(--inslight);
+  font-size: 16px;
+}
+
+.instructions-container blnk {
+  color: transparent;
+}
+
+.instructions-container p b {
+  color: var(--insdark); /* Change to your desired color */
+  font-size: 16px; /* Adjust font size if needed */
+}
+
+.ins-con{
+text-align: left;
+flex-direction: column;
+width: 100%;
+height: 100%; 
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+#number {
+  color: var(--insdark); /* Change to your desired color */
+  font-size: 16px; /* Adjust font size if needed */
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+#gcash {
+  color: var(--insdark); /* Change to your desired color */
+  font-size: 16px; /* Adjust font size if needed */
+}
+
+#maya {
+  color: var(--insdark); /* Change to your desired color */
+  font-size: 16px; /* Adjust font size if needed */
+}
+
+.instructions-container a {
+  color: var(--logintext);
+  background-color: var(--login);
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.instructions-container a:hover,
+.instructions-container a:active,
+.instructions-container a:focus-visible{
+  outline: 2px solid var(--login);
+  outline-offset:2px;
+}

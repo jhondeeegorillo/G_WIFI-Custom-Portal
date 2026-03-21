@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Manrope";
+  src: url(./font/Manrope.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  color: var(--voucherlight);
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.popcheck {
+  --max-width: 20rem;
+  width: min(100% - 0rem, var(--max-width));
+  background-color: var(--card);
+  border-radius: 36px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  padding: 6px;
+  visibility: hidden;
+  top: 82px;
+}
+.open-popup {
+  visibility: visible;
+  left: auto;
+  right: auto;
+  --max-width: 20rem;
+  width: min(100% - 0rem, var(--max-width));
+  z-index: 100;
+}
+
+.forgot_voucher p {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2em;
+  /* color: rgb(55, 71, 79); */
+  color: rgb(31, 117, 255);
+  margin-top: 5%;
+}
+.forgot_voucher a:link,
+.forgot_voucher a:visited {
+  font-size: 12px;
+  font-weight: 500;
+  background: rgb(7, 102, 255);
+  color: rgb(255, 255, 255);
+  padding-left: 18px;
+  padding-top: 5px;
+  padding-right: 18px;
+  padding-bottom: 5px;
+  margin-bottom: 5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.5em;
+}
+.forgot_voucher a:active {
+  font-size: 12px;
+  font-weight: 500;
+  background: rgb(31, 117, 255);
+}
+.forgot_voucher img {
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 18px;
+}
+
+.popcheck button {
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--login);
+  border-radius: 100px;
+  border: none;
+  color: var(--logintext);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin:auto;
+}
+
+.popcheck button:hover,
+.popcheck button:active,
+.popcheck button:focus-visible{
+  outline: 2px solid var(--login);
+  outline-offset:2px;
+}
