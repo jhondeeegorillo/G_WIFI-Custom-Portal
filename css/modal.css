@@ -117,7 +117,7 @@ user-select: none;
 .instructions-container a {
   color: var(--logintext);
   background-color: var(--login);
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
   border-radius: 50px;
   text-align: center;

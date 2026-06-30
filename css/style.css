@@ -99,14 +99,14 @@ body.portal {
   width: 24px;
   height: 24px;
   top: 0;
-  background-color: #fff;
+  background-color: var(--inslight);
   border-radius: 50%;
   animation: scale50 1s infinite ease-in-out;
 }
 .loader::before {
   top: auto;
   bottom: 0;
-  background-color: #231f20;
+  background-color: var(--insdark);
   animation-delay: 0.5s;
 }
 

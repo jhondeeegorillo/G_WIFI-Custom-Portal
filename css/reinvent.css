@@ -154,7 +154,7 @@ form.sign-in-form {
   right: 50%;
   transform: translateY(-50%);
   background: var(--Lcircle);
-  outline: 25px solid var(--inslight);
+  outline: 25px solid var(--Lcircleb);
   outline-offset:25px;
   transition: 1.5s ease-in-out;
   border-radius: 50%;
