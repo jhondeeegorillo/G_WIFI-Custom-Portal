@@ -306,25 +306,7 @@
                                  <p>● Receive your voucher code via SMS.</p>
                                  <p>● Enter the code on the Wi-Fi portal.</p>
                                  <div class="android-element">
-                                  <a href="javascript:openGCash()">Open GCash App</a>
-
-<script>
-function openGCash() {
-    const fallbackUrl = "intent://app#Intent;scheme=gcash;package=com.globe.gcash.android;end;"; // Fallback URL or payment endpoint
-    const gcashUri = "gcash://";
-
-    // Attempt to open the deep link
-    window.location.href = gcashUri;
-
-    // Set a timeout. If the app isn't installed, the browser will navigate to the fallback
-    setTimeout(function() {
-        if (document.hasFocus()) {
-            window.location.href = fallbackUrl;
-        }
-    }, 1000);
-}
-</script>
-
+                                  <a href="intent://app#Intent;scheme=gcash;package=com.globe.gcash.android;end;">Open in GCash</a>
                                  </div>
                                  <div class="ios-element">
                                   <a href="gcash://">Open in GCash</a>
