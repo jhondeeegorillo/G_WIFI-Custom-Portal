@@ -19,11 +19,11 @@ copyCodeBtn.onclick = () => {
     .writeText(codeText)
     .then(() => {
       copyCodeBtn.innerHTML = `Copied`;
-      setTimeout(() => (copyCodeBtn.innerHTML = `Copy Portal Link`), 2000);
+      setTimeout(() => (copyCodeBtn.innerHTML = `Copy Portal Link`), 500);
     })
     .catch(() => {
       copyCodeBtn.innerHTML = `Failed`;
-      setTimeout(() => (copyCodeBtn.innerHTML = `Copy Portal Link`), 2000);
+      setTimeout(() => (copyCodeBtn.innerHTML = `Copy Portal Link`), 500);
     });
 };
 
