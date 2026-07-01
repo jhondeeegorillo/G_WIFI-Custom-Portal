@@ -108,12 +108,16 @@ html {
 
 /* Show Android element if the body has the 'is-android' class */
 body.is-android .android-element {
-    display: block; /* or inline, flex, etc., depending on the element type */
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
 }
 
 /* Show iOS element if the body has the 'is-ios' class */
 body.is-ios .ios-element {
-    display: block;
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
 }
 
 /* Show desktop element if the body has the 'is-desktop' class */

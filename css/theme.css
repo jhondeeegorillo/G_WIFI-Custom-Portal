@@ -20,23 +20,23 @@ html {
   --bak-wall: url(wallpaper.jpg);
 } */
 :root {
-  --maingreeting: rgb(0 44 184);
+  --maingreeting: rgb(26 114 250);
   --card: rgb(255, 255, 255);
-  --login: rgb(13 82 247);
+  --login: rgb(26 114 250);
   --logintext: rgb(255, 255, 255);
-  --voucherdark: rgb(0 44 184);
+  --voucherdark: rgb(1 44 180);
   --voucherlight: rgb(111 186 247);
   --voucherline: rgb(111 186 247);
-  --rates: rgb(111 186 247);
-  --ratestext: rgb(255, 255, 255);
-  --brand: rgb(0 44 184);
-  --bg: rgb(230, 242, 255);
-  --Lcircle: rgb(13 82 247);
-  --Lcircleb: rgb(0 44 184);
-  --Scircle: rgb(111 186 247);
-  --Scircleb: rgb(0 44 184);
-  --insdark: rgb(0 44 184);
-  --inslight: rgb(13 82 247);
+  --rates: rgb(221 238 253);
+  --ratestext: rgb(26 114 250);
+  --brand: rgb(26 114 250);
+  --bg: rgb(236 243 251);
+  --Lcircle: rgb(26 114 250);
+  --Lcircleb: rgb(1 44 180);
+  --Scircle: rgb(221 238 253);
+  --Scircleb: rgb(1 44 180);
+  --insdark: rgb(1 44 180);
+  --inslight: rgb(26 114 250);
 }
 
 .auto-grid {
