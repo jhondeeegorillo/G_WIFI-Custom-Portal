@@ -22,14 +22,14 @@
 
    <body class="portal disable-text-selection">
 
-      <!-- Start of Preloader -->
+      <!-- Preloader -->
       <div id="preloader">
          <img src="./img/logo.png" alt="Company Logo" />
          <span class="loader"></span>
       </div>
-      <!-- End of Preloader -->
+      <!-- Preloader -->
 
-      <!-- Start of Auto Popup Promo -->
+      <!-- Auto Popup Promo -->
     <div class="popup-screen">
       <div class="popup-box">
          <span class="close-popup">&times;</span>
@@ -92,17 +92,17 @@
          
        </div>
        <div class="android-element">
-         <p>Click <b>'Open in Browser'</b> to access the Wi-Fi portal.
+         <p>Click <b>'Open in Browser'</b> or type <b>10.10.10.1</b>
+            in the address bar to access the Wi-Fi portal. <!-- Controller/Gateway IP Address -->
          </p>
        </div>
 
        <div class="ios-element">
-         <a id="copy-code-btn" class="btn-standard">Copy Portal Link</a>
          <a href="gcash://">Open GCash App</a>
        </div>
        <div class="ios-element">
-         <p>Click <b>'Copy Portal Link'</b>, then exit Settings, open your browser, and paste the link in the
-            address bar to access the Wi-Fi portal.
+         <p>Select <b>'Use Without Internet'</b> and exit Settings. Then, open your browser and type <b>10.10.10.1</b>
+            in the address bar to access the Wi-Fi portal. <!-- Controller/Gateway IP Address -->
          </p>
        </div>
 
@@ -110,7 +110,7 @@
          <p>We recommend using an external browser such as Google Chrome or Safari to record and save 
             the voucher status page in your browsing history.
          </p>
-         <brand>&#169; 2026 G WIFI. All rights reserved.</brand>
+         <brand>&#169; 2026 G WIFI. All rights reserved.</brand> <!-- Brand name -->
       </div>
     </div>
 
@@ -148,21 +148,20 @@
         document.querySelector(".popup-screen").style.display = "none";
       });
     </script>
-    <!-- End of Auto Popup Promo -->
+    <!-- Auto Popup Promo -->
 
-      <!-- playbac -->
+      <!-- play music -->
       <main class="main active">
       <audio id="Ipl" loop>
         <source src="./audio/music.mp3" />
       </audio>
       <script>
-        // alert("Touch the screen to play music");
-
         window.addEventListener("click", function () {
           var audio = document.getElementById("Ipl");
           audio.play();
         });
       </script>
+      <!-- play music -->
 
       <div class="container">
          <div class="forms-container">
@@ -191,29 +190,11 @@
 
 
                         <div class="sign-in-form">
-                        
-                           <!--<div id="rotatingText1">Enjoy seamless internet access!</div>
 
-                           <-!-- Voucher Code: -->
                            <div id="input-voucher" class="inputName">
                               <input id="voucherCode" class="oper-section-item input textBox" name="voucherCode"
                                  type="text" required placeholder="Voucher code" maxlength="10" />
                            </div>
-
-                           <script>
-                              let textBox = document.querySelector(".textBox");
-                              let counter = document.querySelector(".counter");
-                              let maxlength = parseInt(textBox.getAttribute("maxlength"), 10);
-
-                              textBox.addEventListener("input", () => {
-                                 // Truncate the value if it exceeds the maxlength
-                                 if (textBox.value.length > maxlength) {
-                                    textBox.value = textBox.value.slice(0, maxlength);
-                                 }
-                                 // Update the counter
-                                 counter.innerText = maxlength - textBox.value.length;
-                              });
-                           </script>
 
                            <button id="button-login" class="button oper-section-item" type="submit">
                               <p>LOG IN</p>
@@ -223,17 +204,14 @@
 
                         </div>
                      </div>
-                     <!-- End of Omada Buttons -->
+                     <!-- Omada Buttons -->
 
-                     <!-- Start of Brand -->
-                     <p class="brand">&#169; 2026 G WIFI. All rights reserved.</p>
-                     <!-- End of Brand -->
+                     <p class="brand">&#169; 2026 G WIFI. All rights reserved.</p> <!-- Brand name -->
                   </form>
 
                   <form action="#" class="sign-up-form">
-                     <!--h2 class="title-wifi-rates">WiFi Rates</h2>
 
-         <-!-- Start of Rates -->
+         <!-- Rates -->
          <table id="rates" class="rates">
             <thead>
                <tr>
@@ -291,27 +269,23 @@
                         <p>HOW TO PAY VIA GCASH</p>
                      </button>
 
-                     <!-- Modal structure -->
                      <div id="image-modal" class="modal">
                         <div class="modal-content">
                            <span class="close-button">&times;</span>
-                           <!--h2>SCAN QR CODE</h2>
-                        
-                           <-!-- Scrollable images -->
+                           
                            <div class="image-container">
                               <img src="./img/qr.jpg" alt="GCash QR Code" />
-                              <!-- <img src="./img/maya-qrcode.png" alt="Maya QR Code" /> -->
-                              <!-- Add more images as needed -->
                            </div>
+                           <!-- e-wallet -->
 
-                           <!-- Scrollable text for instructions -->
+                           <!-- Instructions -->
                            <div class="instructions-container">
                               <div class="ins-con">
-                                 <p>● Connect to <b>G WIFI via GCash.</b></p>
+                                 <p>● Connect to <b>G WIFI via GCash.</b></p> <!-- Wi-Fi name -->
                                  <p>● Open your <b id="gcash">GCash</b> app.</p>
                                  <p>● Send the exact amount to:
                                     <br><b id="number"><blnk>...</blnk>0991 929 9217</b> or scan the <b>QR code,</b>
-                                    <br><blnk>...</blnk>then notify us after payment.
+                                    <br><blnk>...</blnk>then notify us after payment. <!-- Mobile/Account Number -->
                                  </p>
                                  <p>● Receive your voucher code via SMS.</p>
                                  <p>● Enter the code on the Wi-Fi portal.</p>
@@ -323,9 +297,10 @@
                                  </div>
                               </div>
                            </div>
+                           <!-- Instructions -->
                         </div>
                      </div>
-                     <!-- End of Rates -->
+                     <!-- Rates -->
                      
                   </form>
                </div>
@@ -349,14 +324,14 @@
          </div>
       </div>
 
-      <!-- Start of Preloader JS -->
+      <!-- Preloader JS -->
       <script>
          var loader = document.getElementById("preloader");
          document.addEventListener("DOMContentLoaded", function () {
             loader.style.display = "none";
          });
       </script>
-      <!-- End of Preloader JS -->
+      <!-- Preloader JS -->
 
       <script src="./js/reinvent.js"></script>
       <script src="index.js"></script>
